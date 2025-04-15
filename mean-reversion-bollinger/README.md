@@ -27,8 +27,8 @@ The core idea:
 
 | Metric              | Value           |
 |---------------------|------------------|
-| Sharpe Ratio        | *to be filled*   |
-| Number of Trades    | *to be filled*   |
+| Sharpe Ratio        | 0.8   |
+| Number of Trades    | 32   |
 | Cumulative Return (Strategy) | *see chart below* |
 | Cumulative Return (Buy & Hold) | *see chart below* |
 
