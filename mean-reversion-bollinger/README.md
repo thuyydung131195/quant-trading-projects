@@ -1,24 +1,60 @@
-# Bollinger Bands Mean Reversion Strategy
+# 📊 Mean Reversion Strategy using Bollinger Bands
 
-This project tests a simple mean reversion strategy on SPY using Bollinger Bands.
+## 📌 Strategy Overview
+
+This project implements a **mean reversion trading strategy** on the SPY ETF using **Bollinger Bands**.
+
+The core idea:  
+> When price falls below the lower Bollinger Band, we assume it will revert back to the mean — so we enter a long position.
+
+## 🧮 Strategy Rules
+
+- **Buy signal:** When `Close price < Lower Bollinger Band`
+- **Exit signal:** When `Close price > Upper Bollinger Band`
+- **Position is held until exit signal is triggered**
+- **No leverage, no transaction costs included**
+
+## ⚙️ Technical Details
+
+- Bollinger Bands are calculated as:
+  - `MA20 = 20-day Moving Average`
+  - `Upper Band = MA20 + 2 * STD`
+  - `Lower Band = MA20 - 2 * STD`
+- Data Source: `yfinance`
+- Backtest period: `2020-01-01` to `2024-12-31`
+
+## 📈 Performance
+
+| Metric              | Value           |
+|---------------------|------------------|
+| Sharpe Ratio        | *to be filled*   |
+| Number of Trades    | *to be filled*   |
+| Cumulative Return (Strategy) | *see chart below* |
+| Cumulative Return (Buy & Hold) | *see chart below* |
+
+### 🔍 Comparison Chart:
+
+![Strategy vs Market](./your_plot_filename.png)
+
+## 🧠 Observations
+
+- The strategy underperformed SPY buy-and-hold during the tested period.
+- Most of the time, the strategy stayed out of the market or generated small profits/losses.
+- Performance could be improved by:
+  - Adding trend filters (e.g. only trade when MA50 > MA200)
+  - Including stop-loss / take-profit rules
+  - Testing on other instruments or timeframes
+
+## 📂 Files
+
+- `bollinger_backtest.ipynb`: Main notebook for strategy logic and visualization
+- `README.md`: This file
 
 ---
 
-## ✅ Objectives:
-- Load and visualize SPY historical price data
-- Compute Bollinger Bands (20-day MA ± 2 std)
-- Create entry/exit rules based on band crossovers
-- Backtest performance using historical data
+## 📌 Next Steps
 
----
-
-## 📊 Strategy Rules:
-- **Buy** when price crosses below the lower band
-- **Sell** when price crosses above the upper band
-- **Exit** when price returns to the moving average
-
----
-
-## 🧪 Data Source:
-- Yahoo Finance (via `yfinance` package)
+- [ ] Explore RSI or momentum-based strategies
+- [ ] Add a proper backtesting framework (like `backtrader` or `bt`)
+- [ ] Compare multiple strategies in one dashboard
 
