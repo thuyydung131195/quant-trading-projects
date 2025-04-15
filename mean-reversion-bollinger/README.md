@@ -27,10 +27,10 @@ The core idea:
 
 | Metric              | Value           |
 |---------------------|------------------|
-| Sharpe Ratio        | 0.8   |
-| Number of Trades    | 32   |
-| Cumulative Return (Strategy) | *see chart below* |
-| Cumulative Return (Buy & Hold) | *see chart below* |
+| Sharpe Ratio        | 0.8              |
+| Number of Trades    | 32               |
+| Cumulative Return (Strategy) | 28.70% |
+| Cumulative Return (Buy & Hold) | 93.62% |
 
 ### 🔍 Comparison Chart:
 
