@@ -32,9 +32,9 @@ The core idea:
 | Cumulative Return (Strategy) | 28.70% |
 | Cumulative Return (Buy & Hold) | 93.62% |
 
-### 🔍 Comparison Chart:
+### 🔍 Comparison Chart
 
-![Strategy vs Market](./your_plot_filename.png)
+![Strategy vs Market](./bollinger_comparison.png)
 
 ## 🧠 Observations
 
